@@ -33,21 +33,21 @@ if platform.is_win then
          args = { 'D:\\Scoop\\apps\\nu\\current\\nu.exe' },
       },
       { label = 'PowerShell', args = { 'powershell' } },
-      -- {
-      --  label = 'Zsh',
-      --         args = { 'D:\\Git\\bin\\bash.exe' },
-      --    },
-      { label = 'Cmd', args = { 'cmd' } },
-      { label = 'pwsh', args = { 'pwsh' } },
+      {
+         label = 'Bash',
+         args = { 'D:\\Git\\bin\\bash.exe' },
+      },
+      { label = 'Cmd',        args = { 'cmd' } },
+      { label = 'pwsh',       args = { 'pwsh' } },
       -- { lebel = 'Arch', args = { 'C:\\WINDOWS\\system32\\wsl.exe -d Arch' }, cwd = '/root' },
    }
 elseif platform.is_mac then
    options.default_prog = { '/opt/homebrew/bin/fish' }
    options.launch_menu = {
-      { label = 'Bash', args = { 'bash' } },
-      { label = 'Fish', args = { '/opt/homebrew/bin/fish' } },
+      { label = 'Bash',    args = { 'bash' } },
+      { label = 'Fish',    args = { '/opt/homebrew/bin/fish' } },
       { label = 'Nushell', args = { '/opt/homebrew/bin/nu' } },
-      { label = 'Zsh', args = { 'zsh' } },
+      { label = 'Zsh',     args = { 'zsh' } },
    }
 end
 
