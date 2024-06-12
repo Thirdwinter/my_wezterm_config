@@ -1,5 +1,5 @@
 local wezterm = require('wezterm')
-local colors = require('colors.custom')
+-- local colors = require('colors.custom')
 local gpus = wezterm.gui.enumerate_gpus()
 return {
 
