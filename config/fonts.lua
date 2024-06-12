@@ -4,7 +4,7 @@ local platform = require('utils.platform')
 -- local font = 'CodeNewRoman Nerd Font Mono' -- AurulentSansM Nerd Font Mono
 -- local font = 'Monaspace Radon'
 local font = 'Maple Mono'
-local font_size = platform().is_win and 13 or 11
+local font_size = platform().is_win and 10 or 9
 
 return {
    font = wezterm.font(font),
