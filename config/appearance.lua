@@ -26,16 +26,17 @@ return {
    window_background_opacity = 0.2,
    -- win32_system_backdrop = 'Acrylic',
    -- background = {
-   --    -- {
-   --    --    source = { File = 'C://Users//86136//.config//wezterm//backdrops//flowers.png' },
-   --    -- },
    -- {
-   --       source = { Color = colors.background },
-   --       height = '100%',
-   --       width = '100%',
-   -- opacity = 1,
+   -- source = { File = 'C://Users//86136//.config//wezterm//backdrops//flowers.png' },
+   -- },
+   -- {
+   -- source = { Color = colors.background },
+   -- height = '100%',
+   -- width = '100%',
+   -- opacity = 0.4,
    -- },
    -- },
+   -- backgound.opacity = 0.3,
    window_background_gradient = {
       -- Can be "Vertical" or "Horizontal".  Specifies the direction
       -- in which the color gradient varies.  The default is "Horizontal",
@@ -47,7 +48,7 @@ return {
       --       -- Specifies the x coordinate of the center of the circle,
       --       -- in the range 0.0 through 1.0.  The default is 0.5 which
       --       -- is centered in the X dimension.
-      --       cx = 0.75,
+      --       cx = 0.25,
       --
       --       -- Specifies the y coordinate of the center of the circle,
       --       -- in the range 0.0 through 1.0.  The default is 0.5 which
@@ -67,31 +68,33 @@ return {
       -- Accepts CSS style color specs, from named colors, through rgb
       -- strings and more
       colors = {
-         '#EEBD89',
+         -- '#EEBD89',
          '#D13ABD',
          '#0f0c29',
-         '#302b63',
+         -- '#302b63',
+         '#0fac29',
          '#D13ABD',
-         -- '#0f0c29',
+         '#EE0145',
          -- '#24243e',
-         '#EEBD89',
-         '#0f0c29',
+         -- '#EEBD89',
+         -- '#0f0c29',
+         '#823941',
       },
 
       -- Instead of specifying `colors`, you can use one of a number of
       -- predefined, preset gradients.
       -- A list of presets is shown in a section below.
-      -- preset = 'Warm',
+      preset = 'Warm',
 
       -- Specifies the interpolation style to be used.
       -- "Linear", "Basis" and "CatmullRom" as supported.
       -- The default is "Linear".
-      interpolation = 'Linear',
+      interpolation = 'CatmullRom',
 
       -- How the colors are blended in the gradient.
       -- "Rgb", "LinearRgb", "Hsv" and "Oklab" are supported.
       -- The default is "Rgb".
-      blend = 'Rgb',
+      blend = 'Hsv',
 
       -- To avoid vertical color banding for horizontal gradients, the
       -- gradient position is randomly shifted by up to the `noise` value
@@ -99,7 +102,7 @@ return {
       -- Smaller values, or 0, will make bands more prominent.
       -- The default value is 64 which gives decent looking results
       -- on a retina macbook pro display.
-      noise = 64,
+      -- noise = 64,
 
       -- By default, the gradient smoothly transitions between the colors.
       -- You can adjust the sharpness by specifying the segment_size and
@@ -108,8 +111,8 @@ return {
       -- segment_smoothness is how hard the edge is; 0.0 is a hard edge,
       -- 1.0 is a soft edge.
 
-      segment_size = 11,
-      segment_smoothness = 0.8,
+      segment_size = 10,
+      segment_smoothness = 0.1,
    },
    -- scrollbar
    -- enable_scroll_bar = false,
